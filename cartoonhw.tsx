@@ -21,23 +21,23 @@ function draw() {
     context.beginPath();
     context.moveTo(343, 295);
     context.lineTo(343, 330);
-    context.strokeStyle="black";
+    context.strokeStyle = "black";
     context.stroke();
     context.beginPath();
     context.moveTo(325, 313);
     context.lineTo(360, 313);
-    context.strokeStyle="black";
+    context.strokeStyle = "black";
     context.stroke();
     //draws the second window
     context.beginPath();
     context.moveTo(458, 295);
     context.lineTo(458, 330);
-    context.strokeStyle="black";
+    context.strokeStyle = "black";
     context.stroke();
     context.beginPath();
     context.moveTo(440, 313);
     context.lineTo(475, 313);
-    context.strokeStyle="black";
+    context.strokeStyle = "black";
     context.stroke();
     //draws the doorknob
     context.beginPath();
@@ -54,30 +54,29 @@ function draw() {
     //draws the clouds (background objects)
     context.fillStyle = "#FFFFFF";
     context.beginPath();
-    context.ellipse(90, 60, 50, 75, Math.PI/2, 0, Math.PI * 2);
+    context.ellipse(90, 60, 50, 75, Math.PI / 2, 0, Math.PI * 2);
     context.fill();
     context.beginPath();
-    context.ellipse(290, 60, 50, 75, Math.PI/2, 0, Math.PI * 2);
+    context.ellipse(290, 60, 50, 75, Math.PI / 2, 0, Math.PI * 2);
     context.fill();
     context.beginPath();
-    context.ellipse(500, 60, 50, 75, Math.PI/2, 0, Math.PI * 2);
+    context.ellipse(500, 60, 50, 75, Math.PI / 2, 0, Math.PI * 2);
     context.fill();
     context.beginPath();
-    context.ellipse(710, 60, 50, 75, Math.PI/2, 0, Math.PI * 2);
+    context.ellipse(710, 60, 50, 75, Math.PI / 2, 0, Math.PI * 2);
     context.fill();
     //draws the ground
     context.fillStyle = "#6E4C0D";
     context.fillRect(0, 450, canvas.width, 600);
     //for loop to draw the grass
     context.fillStyle = "#27F506";
-    for (let i = 0; i < canvas.width; i += 5)
-    {
+    for (let i = 0; i < canvas.width; i += 5) {
         let w = i;
         context.beginPath();
         context.moveTo(w, 450);
         context.lineTo(w, 425)
-        context.lineTo(w+2, 425);
-        context.lineTo(w+2, 450);
+        context.lineTo(w + 2, 425);
+        context.lineTo(w + 2, 450);
         context.fill();
     }
     //add caption to canvas
