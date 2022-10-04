@@ -5,15 +5,12 @@
 } */
 
 window.onload = function() {
-    window.setTimeout(fadein, 1000, "welcome");
-    window.setTimeout(fadeout, 3000, "welcome");
-    window.setTimeout(changeText, 4100, "welcome");
-    window.setTimeout(fadein, 5000, "welcome");
-    window.setTimeout(fadein, 5000, "topnav");
-    window.setTimeout(fadein, 5500, "topImage");
-    window.setTimeout(fadein, 6000, "leftImage");
-    window.setTimeout(fadein, 6500, "rightImage");
-    window.setTimeout(fadein, 7000, "bottomImage");
+    window.setTimeout(fadein, 1000, "inspiration");
+    window.setTimeout(fadein, 1000, "topnav");
+    window.setTimeout(fadein, 1500, "topImage");
+    window.setTimeout(fadein, 2000, "leftImage");
+    window.setTimeout(fadein, 2500, "rightImage");
+    window.setTimeout(fadein, 3000, "bottomImage");
   }
   
   function fadeout(id) {
@@ -24,6 +21,3 @@ window.onload = function() {
     document.getElementById(id).style.opacity = '1';
   }
 
-  function changeText(id){
-    document.getElementById(id).innerHTML = "There are the people who motivate me.";
-  }
